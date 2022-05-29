@@ -2,12 +2,8 @@ import React from 'react'
 
 const Pokedex = ({id, setId, pokemon}) => {
  
-    
-    
     const {name, sprites, types} = pokemon
 
-    
- 
     const handleClick = e => {
         if(e.target.name === 'more') {
             if(id === 150){
@@ -15,7 +11,7 @@ const Pokedex = ({id, setId, pokemon}) => {
             }else {
                 setId(id+1)
             }
-        }else {
+        } else {
             if(id === 1){
                 setId(150)
             }else {
@@ -23,10 +19,8 @@ const Pokedex = ({id, setId, pokemon}) => {
             }
         }
     }  
-
     return (
         <> 
-
             <div className="container">
                 <div className="container__left">
                     <div className="container__left__header">

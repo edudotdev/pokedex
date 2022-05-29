@@ -17,6 +17,7 @@ body {
   justify-content: center;
   height: 100vh;
   font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
 }
 
 .container {
@@ -339,4 +340,25 @@ body {
 .divbottom .short {
   width: 70px;
   height: 45px;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .container {
+    transform: scale(.7);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    transform: scale(.6);
+
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .container {
+    transform: scale(.4);
+
+  }
 }
