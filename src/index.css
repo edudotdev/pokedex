@@ -13,11 +13,10 @@
 body {
   background: #E84848;
   display: flex;
-  align-items: center;
+  margin: 30px 0;
   justify-content: center;
   height: 100vh;
   font-family: 'Press Start 2P', cursive;
-  overflow: hidden;
 }
 
 .container {
@@ -345,20 +344,17 @@ body {
 
 @media only screen and (max-width: 640px) {
   .container {
-    transform: scale(.7);
+    width: 300px;
+    grid-template-columns: 300px;
+    box-shadow: none;
   }
-}
 
-@media only screen and (max-width: 450px) {
-  .container {
-    transform: scale(.6);
-
+  .container__left {
+    border-radius: var(--bordepx);
   }
-}
-
-@media only screen and (max-width: 380px) {
-  .container {
-    transform: scale(.4);
-
+  .container__right {
+    border-radius: var(--bordepx);
+    margin-top: 30px;
   }
+
 }
