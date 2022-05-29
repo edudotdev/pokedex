@@ -13,7 +13,7 @@
 body {
   background: #E84848;
   display: flex;
-  margin: 30px 0;
+  align-items: center;
   justify-content: center;
   height: 100vh;
   font-family: 'Press Start 2P', cursive;
@@ -341,8 +341,11 @@ body {
   height: 45px;
 }
 
-
 @media only screen and (max-width: 640px) {
+  body {
+    align-items: start;
+    margin: 30px 0;
+  }
   .container {
     width: 300px;
     grid-template-columns: 300px;
@@ -356,5 +359,4 @@ body {
     border-radius: var(--bordepx);
     margin-top: 30px;
   }
-
 }
